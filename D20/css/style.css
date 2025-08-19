@@ -1,0 +1,192 @@
+.results {
+    max-height: 250px;      /* Ajusta según tu preferencia */
+    overflow-y: auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results p {
+    margin: 10px 0;
+}
+
+.select-dice {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px; /
+}
+
+.roll-btn {    
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.dice-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px 36px;
+    margin: 16px;
+    background: #f9f9f9;
+    height: 80px;
+    width: 120px;
+    box-sizing: border-box;
+}
+
+.dice-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Añade esto para el botón invisible */
+.dice-card:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    visibility: hidden;
+}
+
+.results p {
+    display: flex;
+    font-size: 18px;
+    color: #333;
+}
+
+/* CAMBIO PRINCIPAL: Contenedor de dados alineado horizontalmente */
+.dice-container, #dice-container {
+    display: flex;
+    flex-direction: row; /* Mantiene la dirección horizontal */
+    flex-wrap: wrap; /* Permite que se envuelvan en múltiples líneas si es necesario */
+    justify-content: center; /* Centra los dados horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Cambiado de 80% a 100% para mejor distribución */
+    gap: 10px; /* Añade espacio consistente entre los dados */
+    margin: 20px 0; /* Añade margen vertical */
+}
+
+/* Asegura que el contenedor principal también esté bien configurado */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 80px; /* Añade espacio para el footer */
+}
+
+.add-dice-btn{
+    width: 100px;
+    height: 40px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Añade margen inferior para separación */
+}
+
+.clear-all-btn{
+    width: 100px;
+    height: 40px;
+    background-color: #DC3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+
+.set-all-dice-select{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px; /* Espacio entre el select y el botón */
+}
+
+.set-all-dice-btn{
+    width: 120px;
+    height: 30px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con opacidad */
+    padding: 16px 0;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.delete {
+    width: 80px;
+    height: 30px;
+    background-color: #DC3545; /* Rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-bottom: 20px;
+    top: 10px; /* Ajusta la posición vertical */
+    position: relative; /* Necesario para que 'top' funcione */
+}
+
+.delete:hover {
+    background-color: #b71c1c; /* Rojo más oscuro al pasar el mouse */
+}
+
+.resultado-card {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e6f7ff2d;
+    border: 1px solid #007bff;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}

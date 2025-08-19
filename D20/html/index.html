@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Dice Roller</title>
+</head>
+<body>
+    <header>
+        <h1>Dice Roller</h1>
+        <div>
+            <select class="set-all-dice-select" id="set-all-dice-select">
+                <option value="4">D4</option>
+                <option value="6">D6</option>
+                <option value="8">D8</option>
+                <option value="10">D10</option>
+                <option value="12">D12</option>
+                <option value="20">D20</option>
+                <option value="100">D100</option>
+            </select>
+            <button class="set-all-dice-btn" id="set-all-dice-btn">Unify dice</button>
+        </div>
+    </header>
+    <div id="dice-container"></div>
+    <div class="results" id="result"></div>
+    <footer>
+        <button class="add-dice-btn" id="add-dice-btn">Add dice</button>
+        <button class="roll-btn" id="roll-btn">Roll Dice</button>
+        <button class="clear-all-btn" id="clear-all-btn">Drop all</button>
+    </footer>
+        <script src="/js/index.js"></script>
+</body>
+</html>
